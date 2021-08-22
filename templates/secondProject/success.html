@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Status</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Usted ha borrado</h1>
+
+        <h2 class="alert alert-success">todo</h2>
+
+        <h1>Eliminado exitosamente</h1>
+
+        <form action="{% url 'home' %}">
+            <input type="submit" value="regresar" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+
+</html>

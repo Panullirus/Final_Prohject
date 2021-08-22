@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">1902145</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'password' %}">Generate password <span class="sr-only"></span></a>
+            </ul>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'secondwebpage' %}">Second page <span class="sr-only"></span></a>
+            </ul>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'cv' %}">Curriculum<span class="sr-only"></span></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h1>Datos encontrados</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <h2>Name</h2>
+                    </th>
+                    <th>
+                        <h2>Age</h2>
+                    </th>
+                    <th>
+                        <h2>Id</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for col in database %}
+                <tr>
+                    <td>{{col.name}}</td>
+                    <td>{{col.age}}</td>
+                    <td>{{col.id}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <form action="{% url 'deleteObj' %}">
+            <input type="submit" value="borrar todo" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+
+</html>

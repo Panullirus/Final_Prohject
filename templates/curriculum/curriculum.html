@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">1902145</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'password' %}">Generate password <span class="sr-only"></span></a>
+            </ul>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'secondwebpage' %}">Second page <span class="sr-only"></span></a>
+            </ul>
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'cv' %}">Curriculum<span class="sr-only"></span></a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <div class="card" style="background-color: aqua;">
+                    <h5 class="card-title">Yahir González Torres</h5>
+                </div>
+                <p class="card-text">I AM A STUDENT OF THE TSU IN IT DEVELOPING MULTIPLATFORM SOFTWARE WITH THE DESIRE TO TEST EVERYTHING I HAVE LEARNED DURING MY CAREER IN SEARCH TO BE ABLE TO REALIZE MY PROFESSIONAL PRACTICES.</p>
+                <div class="aboutme">
+                    <h5 class="card-text">Skills</h5>
+                    <li>TEAMWORK</li>
+                    <li>CONTENT RESEARCH</li>
+                    <li>RESPONSIBLE WORK</li>
+                    <li>SOLVE PROBLEMS</li>
+                </div>
+                <div class="contact">
+                    <h5 class="card-text">Contact me</h5>
+                    <li> E-mail - tyahir27@gmail.com</li>
+                    <li>Phone number - (984) 115 8179</li>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <div class="fisrt">
+                    <h5 class="card-title">Schoolarship</h5>
+                    <p class="card-text">Centro de Estudios Tecnológicos del Mar No. 36</p>
+                    <p class="card-text">Technician in Acuaculture</p>
+                    <p class="card-text">2016 - 2019</p>
+                </div>
+                <div style="margin-top: 5%;">
+                    <p class="card-text">Universidad Tecnológica de la Riviera Maya</p>
+                    <p class="card-text">TSU IT Software debelopment</p>
+                    <p class="card-text">2019 - present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <div class="card">
+                    <h5 class="card-title">Idioms</h5>
+                </div>
+                <p class="card-text">Spanish - native</p>
+                <p class="card-text">English - B1</p>
+                <div class="aboutme">
+                    <h5 class="card-text">Knowledge</h5>
+                    <li>Java, Python</li>
+                    <li>HTML and CSS</li>
+                    <li>Angular and Django</li>
+                    <li>Office</li>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <div class="fisrt">
+                    <h5 class="card-title">Jobs</h5>
+                    <p class="card-text">Cocina economica</p>
+                    <p class="card-text">Waiter</p>
+                    <p class="card-text">06/2019 - 09/2019</p>
+                    <li>Serve meals</li>
+                    <li>purchase of inputs</li>
+                </div>
+                <div class="fisrt">
+                    <p class="card-text">Taqueria Hacienda el Petén</p>
+                    <p class="card-text">Waiter</p>
+                    <p class="card-text">04/2020 - 10/2020</p>
+                    <li>Serve meals</li>
+                    <li>purchase of inputs</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
